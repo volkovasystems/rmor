@@ -1,0 +1,48 @@
+{
+  "name": "rmor",
+  "version": "0.0.0",
+  "description": "Creates a safe copy of data that can be parsed by JSON parser.",
+  "main": "rmor.js",
+  "support": "rmor.support.js",
+  "deploy": "rmor.deploy.js",
+  "browser": "rmor.deploy.js",
+  "scripts": {
+    "build": "babel rmor.js --out-file rmor.support.js --source-maps && webpack --progress --display-modules",
+    "test": "mocha rmor-test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/volkovasystems/rmor.git"
+  },
+  "keywords": [
+    "safe",
+    "copy",
+    "json",
+    "data",
+    "rmor"
+  ],
+  "author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/volkovasystems/rmor/issues"
+  },
+  "homepage": "https://github.com/volkovasystems/rmor#readme",
+  "dependencies": {
+    "asea": "^0.11.0",
+    "babel-runtime": "^6.23.0",
+    "budge": "^0.16.0",
+    "depher": "^0.19.0",
+    "falzy": "^0.15.0",
+    "fluctuate": "^0.3.0",
+    "loosen": "^0.10.0",
+    "protype": "^0.19.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-core": "^6.23.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-latest": "^6.22.0",
+    "source-map-loader": "^0.2.0",
+    "webpack": "^2.2.1"
+  }
+}
