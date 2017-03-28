@@ -1,11 +1,12 @@
 {
   "name": "rmor",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Creates a safe copy of data that can be parsed by JSON parser.",
   "main": "rmor.deploy.js",
   "support": "rmor.support.js",
   "authors": [
-    "Richeve S. Bebedor <richeve.bebedor@gmail.com>"
+    "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
   ],
   "license": "MIT",
   "keywords": [
@@ -23,43 +24,13 @@
     "test",
     "tests"
   ],
-  "resolutions": {
-    "asea": "^0.11.0",
-    "depher": "^0.19.0",
-    "falzy": "^0.15.0",
-    "protype": "^0.19.0",
-    "budge": "^0.16.0",
-    "doubt": "^0.21.0",
-    "harden": "^0.17.0",
-    "raze": "^0.22.0",
-    "dephall": "^0.17.0",
-    "cemento": "^0.13.0",
-    "zelf": "^0.9.0",
-    "falze": "^0.16.0",
-    "arkount": "^0.2.0",
-    "stringe": "^0.1.0",
-    "arid": "^0.19.0",
-    "truly": "^0.15.0",
-    "kount": "^0.10.0",
-    "empt": "^0.17.0",
-    "wichevr": "^0.4.0",
-    "pyck": "^0.17.0",
-    "kein": "^0.14.0",
-    "clazof": "^0.14.0",
-    "plough": "^0.16.0",
-    "wauker": "^0.3.0",
-    "protease": "^0.12.0",
-    "een": "^0.10.0",
-    "decrease": "^0.14.0",
-    "stuffed": "^0.14.0"
-  },
   "dependencies": {
-    "asea": "^0.11.0",
-    "budge": "^0.16.0",
-    "depher": "^0.19.0",
-    "falzy": "^0.15.0",
-    "fluctuate": "^0.3.0",
-    "loosen": "^0.10.0",
-    "protype": "^0.19.0"
+    "asea": "^0.13.0",
+    "budge": "^0.18.0",
+    "depher": "^0.22.0",
+    "falzy": "^0.17.0",
+    "fluctuate": "^0.5.0",
+    "loosen": "^0.12.0",
+    "protype": "^0.21.0"
   }
 }
