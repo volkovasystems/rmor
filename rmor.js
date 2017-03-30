@@ -1,4 +1,4 @@
-	"use strict";
+"use strict";
 
 /*;
 	@module-license:
@@ -33,7 +33,10 @@
 			"path": "rmor/rmor.js",
 			"file": "rmor.js",
 			"module": "rmor",
-			"author": "Richeve S. Bebedor"
+			"author": "Richeve S. Bebedor",
+			"contributors": [
+				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
+			],
 			"eMail": "richeve.bebedor@gmail.com",
 			"repository": "https://github.com/volkovasystems/rmor.git",
 			"test": "rmor-test.js",
@@ -66,7 +69,7 @@ const fluctuate = require( "fluctuate" );
 const loosen = require( "loosen" );
 const protype = require( "protype" );
 
-var rmor = function rmor( entity, depth, limiter ){
+const rmor = function rmor( entity, depth, limiter ){
 	/*;
 		@meta-configuration:
 			{
