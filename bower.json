@@ -1,6 +1,6 @@
 {
   "name": "rmor",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Creates a safe copy of data that can be parsed by JSON parser.",
   "main": "rmor.deploy.js",
   "support": "rmor.support.js",
@@ -26,11 +26,11 @@
   ],
   "dependencies": {
     "asea": "^0.13.0",
-    "budge": "^0.19.0",
-    "depher": "^0.23.0",
+    "budge": "^0.21.0",
+    "depher": "^0.26.0",
     "falzy": "^0.17.0",
-    "fluctuate": "^0.6.0",
-    "loosen": "^0.13.0",
+    "fluctuate": "^0.7.0",
+    "loosen": "^0.15.0",
     "protype": "^0.21.0"
   }
 }
