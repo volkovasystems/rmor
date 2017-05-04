@@ -1,6 +1,7 @@
-
+const assert = require( "assert" );
 const rmor = require( "./rmor.js" );
 
-console.log( rmor( { "hello": "world" } ) );
+assert.deepEqual( rmor( { "hello": "world" } ), { "hello": "world" } );
+assert.deepEqual( rmor( global ), { } );
 
-console.log( rmor( global ) );
+console.log( "ok" );
