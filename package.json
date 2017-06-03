@@ -1,6 +1,6 @@
 {
   "name": "rmor",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "description": "Creates a safe copy of data that can be parsed by JSON parser.",
   "main": "rmor.js",
   "support": "rmor.support.js",
@@ -33,12 +33,12 @@
   "dependencies": {
     "asea": "^0.13.0",
     "babel-runtime": "^6.23.0",
-    "budge": "^0.28.0",
-    "depher": "^0.32.0",
+    "depher": "^0.33.0",
     "falzy": "^0.19.0",
-    "fluctuate": "^0.12.0",
-    "loosen": "^0.21.0",
-    "protype": "^0.21.0"
+    "fluctuate": "^0.13.0",
+    "loosen": "^0.22.0",
+    "protype": "^0.21.0",
+    "shft": "^0.1.0"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
@@ -46,6 +46,6 @@
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-latest": "^6.24.1",
     "source-map-loader": "^0.2.1",
-    "webpack": "^2.5.1"
+    "webpack": "^2.6.1"
   }
 }

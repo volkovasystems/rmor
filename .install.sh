@@ -1,12 +1,12 @@
 yarn add \
 babel-runtime \
 asea \
-budge \
 depher \
 falzy \
 fluctuate \
 loosen \
 protype \
+shft \
 --save && \
 yarn add \
 babel-cli \
@@ -18,11 +18,11 @@ webpack \
 --dev && \
 bower install \
 asea \
-budge \
 depher \
 falzy \
 fluctuate \
 loosen \
 protype \
+shft \
 --save \
 --force-latest
