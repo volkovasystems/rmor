@@ -51,23 +51,23 @@
 	@include:
 		{
 			"asea": "asea",
-			"budge": "budge",
 			"depher": "depher",
 			"falzy": "falzy",
 			"fluctuate": "fluctuate",
 			"loosen": "loosen",
-			"protype": "protype"
+			"protype": "protype",
+			"shft": "shft"
 		}
 	@end-include
 */
 
 const asea = require( "asea" );
-const budge = require( "budge" );
 const depher = require( "depher" );
 const falzy = require( "falzy" );
 const fluctuate = require( "fluctuate" );
 const loosen = require( "loosen" );
 const protype = require( "protype" );
+const shft = require( "shft" );
 
 const rmor = function rmor( entity, depth, limiter ){
 	/*;
@@ -84,7 +84,7 @@ const rmor = function rmor( entity, depth, limiter ){
 		throw new Error( "invalid entity" );
 	}
 
-	let parameter = budge( arguments );
+	let parameter = shft( arguments );
 
 	depth = depher( parameter, NUMBER, Infinity );
 
