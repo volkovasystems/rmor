@@ -1,12 +1,13 @@
 {
   "name": "rmor",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "description": "Creates a safe copy of data that can be parsed by JSON parser.",
   "main": "rmor.deploy.js",
   "support": "rmor.support.js",
   "authors": [
     "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
-    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
+    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+    "Vinse Vinalon <vinsevinalon@gmail.com>"
   ],
   "license": "MIT",
   "keywords": [
@@ -25,12 +26,12 @@
     "tests"
   ],
   "dependencies": {
-    "asea": "^0.13.0",
-    "depher": "^0.33.0",
-    "falzy": "^0.19.0",
-    "fluctuate": "^0.13.0",
-    "loosen": "^0.22.0",
-    "protype": "^0.21.0",
-    "shft": "^0.1.0"
+    "asea": "^0.14.0",
+    "depher": "^0.34.0",
+    "falzy": "^0.20.0",
+    "fluctuate": "^0.14.0",
+    "loosen": "^0.23.0",
+    "protype": "^0.22.0",
+    "shft": "^0.2.0"
   }
 }
