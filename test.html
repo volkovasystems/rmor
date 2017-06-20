@@ -20,7 +20,7 @@
 
 				assert.deepEqual( rmor( { "hello": "world" } ), { "hello": "world" }, "should be deeply equal" );
 
-				assert.equal( typeof rmor( window ), "object", "should return 'object'" );
+				assert.equal( typeof rmor( window ) == "object", true, "should return true" );
 
 			} );
 		</script>
