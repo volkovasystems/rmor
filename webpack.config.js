@@ -2,6 +2,7 @@
 
 const webpack = require( "webpack" );
 const UglifyJsPlugin = webpack.optimize.UglifyJsPlugin;
+const ModuleConcatenationPlugin = webpack.optimize.ModuleConcatenationPlugin;
 
 module.exports = {
 	"entry": "./rmor.support.js",
@@ -24,9 +25,9 @@ module.exports = {
 	"module": {
 		"rules": [
 			{
-				"enforce": "pre",
 				"test": /\.support\.js$/,
-				"loader": "source-map-loader"
+				"loader": "source-map-loader",
+				"enforce": "pre"
 			}
 		]
 	},
@@ -45,7 +46,8 @@ module.exports = {
 			"comments": false,
 			"sourceMap": true,
 			"mangle": false
-		} )
+		} ),
+		new ModuleConcatenationPlugin( )
 	],
 	"devtool": "#source-map"
 };
