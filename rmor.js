@@ -56,7 +56,6 @@
 			"falzy": "falzy",
 			"fluctuate": "fluctuate",
 			"loosen": "loosen",
-			"protype": "protype",
 			"shft": "shft"
 		}
 	@end-include
@@ -67,7 +66,6 @@ const depher = require( "depher" );
 const falzy = require( "falzy" );
 const fluctuate = require( "fluctuate" );
 const loosen = require( "loosen" );
-const protype = require( "protype" );
 const shft = require( "shft" );
 
 const rmor = function rmor( entity, depth, limiter ){
@@ -81,7 +79,7 @@ const rmor = function rmor( entity, depth, limiter ){
 		@end-meta-configuration
 	*/
 
-	if( falzy( entity ) || !protype( entity, OBJECT ) ){
+	if( falzy( entity ) || typeof entity != "object" ){
 		throw new Error( "invalid entity" );
 	}
 
@@ -99,7 +97,7 @@ const rmor = function rmor( entity, depth, limiter ){
 			return true;
 		}
 
-		return protype( element, FUNCTION );
+		return typeof element == "function";
 	} );
 
 	return fluctuate( loosen( entity, true, depth, limiter ) );

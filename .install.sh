@@ -5,7 +5,6 @@ depher \
 falzy \
 fluctuate \
 loosen \
-protype \
 shft \
 --save && \
 yarn add \
@@ -22,7 +21,6 @@ depher \
 falzy \
 fluctuate \
 loosen \
-protype \
 shft \
 --save \
 --force-latest

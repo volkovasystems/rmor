@@ -56,18 +56,16 @@
               			"falzy": "falzy",
               			"fluctuate": "fluctuate",
               			"loosen": "loosen",
-              			"protype": "protype",
               			"shft": "shft"
               		}
               	@end-include
-              */
+              */var _typeof2 = require("babel-runtime/helpers/typeof");var _typeof3 = _interopRequireDefault(_typeof2);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 
 var asea = require("asea");
 var depher = require("depher");
 var falzy = require("falzy");
 var fluctuate = require("fluctuate");
 var loosen = require("loosen");
-var protype = require("protype");
 var shft = require("shft");
 
 var rmor = function rmor(entity, depth, limiter) {
@@ -81,7 +79,7 @@ var rmor = function rmor(entity, depth, limiter) {
                                                   	@end-meta-configuration
                                                   */
 
-	if (falzy(entity) || !protype(entity, OBJECT)) {
+	if (falzy(entity) || (typeof entity === "undefined" ? "undefined" : (0, _typeof3.default)(entity)) != "object") {
 		throw new Error("invalid entity");
 	}
 
@@ -99,7 +97,7 @@ var rmor = function rmor(entity, depth, limiter) {
 			return true;
 		}
 
-		return protype(element, FUNCTION);
+		return typeof element == "function";
 	});
 
 	return fluctuate(loosen(entity, true, depth, limiter));
