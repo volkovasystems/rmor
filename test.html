@@ -18,9 +18,9 @@
 		<script type="application/javascript">
 			QUnit.test( "rmor unit test", function( assert ) {
 
-				assert.deepEqual( rmor( { "hello": "world" } ), { "hello": "world" }, "should be deeply equal" );
+				assert.deepEqual( rmor( { "hello": "world" } ), { "hello": "world" }, "should be equal to { 'hello': 'world' }" );
 
-				assert.equal( typeof rmor( window ) == "object", true, "should return true" );
+				assert.equal( typeof rmor( window ) == "object", true, "should be of object data type" );
 
 			} );
 		</script>
