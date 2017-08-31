@@ -1,16 +1,32 @@
 {
   "stats": {
-    "suites": 0,
-    "tests": 0,
-    "passes": 0,
+    "suites": 2,
+    "tests": 1,
+    "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2017-08-31T05:30:42.680Z",
-    "end": "2017-08-31T05:30:42.680Z",
-    "duration": 0
+    "start": "2017-08-31T09:49:39.023Z",
+    "end": "2017-08-31T09:49:39.030Z",
+    "duration": 7
   },
-  "tests": [],
+  "tests": [
+    {
+      "title": "should create safe copy of data that can be parsed by JSON parser ",
+      "fullTitle": "rmor `rmor with object that have 3 levels or depth should create safe copy of data that can be parsed by JSON parser ",
+      "duration": 3,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ],
   "pending": [],
   "failures": [],
-  "passes": []
+  "passes": [
+    {
+      "title": "should create safe copy of data that can be parsed by JSON parser ",
+      "fullTitle": "rmor `rmor with object that have 3 levels or depth should create safe copy of data that can be parsed by JSON parser ",
+      "duration": 3,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ]
 }

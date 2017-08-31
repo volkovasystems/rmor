@@ -66,6 +66,52 @@ const rmor = require( "./rmor.js" );
 
 describe( "rmor", ( ) => {
 
+	describe( "`rmor with object that have 3 levels or depth", ( ) => {
+		it( "should create safe copy of data that can be parsed by JSON parser ", ( ) => {
+
+			let test = {
+				"hello": {
+					"world": {
+						"yeah": 1,
+						"ugh": false,
+						"hi": [
+							{
+								"weeeh": {
+									"yehey": 123
+								}
+							},
+							{
+								"weeeh": {
+									"yehey": 1234
+								}
+							},
+							"hello world",
+							123,
+							{
+								"weeeeeeh": 12345
+							}
+						]
+					}
+				}
+			};
+
+			let test2 = JSON.stringify( test );
+			assert.deepEqual( test, JSON.parse( test2 ) );
+
+		} );
+	} );
+
+	// describe( "`rmor( global )`", ( ) => {
+	// 	it( "should return object type", ( ) => {
+	//
+	// 		let test = rmor( global );
+	// 		let test2 = JSON.stringify( test );
+	//
+	// 		assert.deepEqual( test, JSON.parse( test2 ) );
+	//
+	// 	} ).timeout( 15000 );
+	// } );
+
 } );
 
 //: @end-server
