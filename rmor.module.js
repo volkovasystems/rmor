@@ -93,7 +93,7 @@ const rmor = function rmor( entity, depth, limiter ){
 				This is an internal security feature, if the entity is global.
 			@end-note
 		*/
-		if( asea.server && global === entity && ( /^process/ ).test( key ) ){
+		if( asea.SERVER && global === entity && ( /^process/ ).test( key ) ){
 			return true;
 		}
 
